@@ -2,16 +2,19 @@
 	background: #fff;
 	font-size: 13px;
 	padding: 10px;
+	left: 0;
 }
 
 #markdown {
 	padding: 10px;
 	color: #333;
 	border: none;
+	left: 34%;
 }
 
 #output {
 	background: #eee;
 	font-size: 13px;
 	padding: 0;
+	left: 68%;
 }

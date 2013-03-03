@@ -7,22 +7,33 @@ html, body {
 }
 
 body {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: flex;
-
-	-webkit-flex-flow: row wrap;
-	-moz-flex-flow: row wrap;
-	flex-flow: row wrap;
-
 	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	background: #fff;
 }
 
 body > .column {
 	height: 100%;
 	overflow: scroll;
-	-webkit-flex: 1;
-	-moz-flex: 1;
-	flex: 1;
 	box-sizing: border-box;
+}
+
+/*
+body {
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+
+body > .column {
+	-webkit-flex: 1;
+	flex: 1;
+}
+*/
+
+body > .column {
+	width: 32%;
+	position: fixed;
+	top: 0;
 }
