@@ -142,13 +142,15 @@ var Converter = new function() {
 	    		 o = {};
 
 	    for (var i in sheets) {
-	        var rules = sheets[i].rules || sheets[i].cssRules;
-	        for (var r in rules) {
-	        	var selector = rules[r].selectorText;
-	            if (selector && !selector.match(/:/) && a.is(selector)) {
-	                o = $.extend(o, css2json(rules[r].style), css2json(a.attr('style')));
-	            }
-	        }
+	    	try {
+		        var rules = sheets[i].rules || sheets[i].cssRules;
+		        for (var r in rules) {
+		        	var selector = rules[r].selectorText;
+		            if (selector && !selector.match(/:/) && a.is(selector)) {
+		                o = $.extend(o, css2json(rules[r].style), css2json(a.attr('style')));
+		            }
+		        }
+		    } catch (e) {}
 	    }
 
 	    return o;
