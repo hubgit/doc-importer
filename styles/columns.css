@@ -1,0 +1,17 @@
+#input {
+	background: #fff;
+	font-size: 13px;
+	padding: 10px;
+}
+
+#markdown {
+	padding: 10px;
+	color: #333;
+	border: none;
+}
+
+#output {
+	background: #eee;
+	font-size: 13px;
+	padding: 0;
+}

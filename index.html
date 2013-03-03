@@ -1,0 +1,44 @@
+<!doctype html>
+
+<!-- metadata -->
+<meta charset="utf-8">
+<title>Doc Importer</title>
+
+<!-- styles -->
+<link rel="stylesheet" href="styles/layout.css">
+<link rel="stylesheet" href="styles/columns.css">
+<link rel="stylesheet" href="vendor/redactor/redactor.css">
+
+<!-- vendor scripts -->
+<script src="http://www.google.com/jsapi"></script>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.1.1.js"></script>
+<!--<script src="vendor/jquery.js"></script>-->
+<script src="vendor/handlebars.js"></script>
+<script src="vendor/underscore.js"></script>
+<script src="vendor/backbone.js"></script>
+<script src="vendor/html2markdown.js"></script>
+<script src="vendor/htmldomparser.js"></script>
+<script src="vendor/showdown.js"></script>
+<script src="vendor/redactor/redactor.js"></script>
+
+<!-- app scripts -->
+<script src="scripts/views.js"></script>
+<script src="scripts/convert.js"></script>
+<script src="scripts/app.js"></script>
+
+<!-- layout -->
+<article id="input" class="column">
+	<form>
+		<button id="google-import" class="btn btn-primary">Import a document from Google Docs</button>
+	</form>
+
+	<div>or choose an example document:</div>
+
+	<ul id="examples">
+		<li><a href="https://docs.google.com/document/d/1_oEeWN4Iq25QDhWvw1jIdklIOenQMhpE9S1QNY3OomA/export">Example 1</a></li>
+	</ul>
+</article>
+
+<textarea id="markdown" class="column"></textarea>
+<div id="output" class="column"></div>
